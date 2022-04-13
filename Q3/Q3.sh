@@ -16,3 +16,17 @@ cat -n $REPLY | tail -n1 | awk '{print $1}'
 #c 
 #using word count (wc) to do it - 
 wc -w $REPLY | awk '{print $1}'
+
+#d
+counter=1
+while read line
+do
+    words=( $line ) #converting each line to a string
+    var=${#words[*]} #number of elements in the array = number of words in the line
+    echo "$counter $var"
+    let counter++
+done < $REPLY
+
+#e
+
+
