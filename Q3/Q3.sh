@@ -14,4 +14,5 @@ cat -n $REPLY | tail -n1 | awk '{print $1}'
 #and print the first word, ie, the line number using awk
 
 #c 
-
+#using word count (wc) to do it - 
+wc -w $REPLY | awk '{print $1}'
