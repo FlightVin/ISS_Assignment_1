@@ -12,6 +12,7 @@ do
         if [[ ${line:$i:1} == "~" ]]
         then
             tilde_index=$i
+            #To find where the author name starts
         fi
     done
 
