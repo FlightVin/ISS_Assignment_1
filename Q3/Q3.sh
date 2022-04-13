@@ -28,3 +28,10 @@ do
 done < $REPLY
 
 #e
+cat $REPLY | tr ' ' '\n' | sort | uniq -c | awk '{if ( $1 != 1) print $2": <> - "$1 }'
+#Read the file
+#   Make all spaces into newline characters
+#       Sort the words
+#           Count words with their count
+#               Print the result only if duplicates
+#interpreting question as only printing when frequency > 1
