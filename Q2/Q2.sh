@@ -18,7 +18,7 @@ do
     then
         echo $line >> speech.txt
     else
-        
-        #echo ${line:$i+1} >> speech.txt
+        echo "${line:$tilde_index+1} once said, \"${line:0:$tilde_index-1}\"">> speech.txt
+
     fi
 done < quotes.txt
