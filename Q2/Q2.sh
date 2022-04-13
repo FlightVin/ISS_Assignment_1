@@ -7,7 +7,8 @@ rm speech.txt
 while read line
 do
     tilde_index=-1
-    for (( i=0; i<${#line}; i++ )); do
+    for (( i=0; i<${#line}; i++ ))
+    do
         if [[ ${line:$i:1} == "~" ]]
         then
             tilde_index=$i
