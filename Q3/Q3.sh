@@ -23,10 +23,8 @@ while read line
 do
     words=( $line ) #converting each line to a string
     var=${#words[*]} #number of elements in the array = number of words in the line
-    echo "$counter $var"
+    echo "$counter: <> - $var"
     let counter++
 done < $REPLY
 
 #e
-
-
