@@ -61,7 +61,9 @@ Running question Q4 -
     $ ./Q4.sh
     $ n1, n2, n3..
 
-    Sorts n1, n2, n3... where n1, n2, n3.. are integers in ascending order and prints the same
+    Sorts n1, n2, n3... where n1, n2, n3.. are integers in ascending order and prints the sorted file as
+    x1 x2 x3...
+    Where x1, x2, x3 are te numbers in sorted form
 
 Running question Q5_a - 
     $ cd Q5
@@ -84,3 +86,6 @@ Running question Q5_c -
     $ word_entered
 
     Prints first half word_entered in reverse and rest as same
+    
+    
+   
