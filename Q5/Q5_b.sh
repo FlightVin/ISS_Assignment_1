@@ -3,7 +3,7 @@
 read
 str=$REPLY
 
-#a -
+#b -
 
 for (( i=${#str}-1; i>=0; i-- ))
 do

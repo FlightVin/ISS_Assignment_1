@@ -29,6 +29,8 @@ Tree of directory -
 │   └── quotes.txt
 └── README.txt
 
+NOTE - added copies of .sh files in pwd too for automated checking
+
 6 directories, 16 files
 
 Running question Q1_a - 
