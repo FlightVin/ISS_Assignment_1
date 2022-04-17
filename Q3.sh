@@ -23,12 +23,13 @@ while read line
 do
     words=( $line ) #converting each line to a string
     var=${#words[*]} #number of elements in the array = number of words in the line
-    echo "$counter: <> - $var"
+    echo "Line No: $counter - $var"
     let counter++
 done < $REPLY
 
 #e
-cat $REPLY | tr ' ' '\n' | sort | uniq -c | awk '{if ( $1 != 1) print $2": <> - "$1 }'
+cat $REPLY | tr ' ' '\n' | tr -c '[:alnum:]' '\n' | sort | uniq -c | awk '{if ( $1 != 1) print "Word: " $2 " - "$1-1 }'
+#subtracting 1 since it asked for number of repetitions
 #Read the file
 #   Make all spaces into newline characters
 #       Sort the words
