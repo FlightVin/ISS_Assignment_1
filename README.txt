@@ -35,6 +35,12 @@ Running question Q2 -
 
     Makes speech.txt from quotes.txt in the required format
 
+Running question Q3 (all commands - subfiles included later) -
+    $ ./q3.sh 
+    $ file_name
+
+    Does required operations and prints data onto terminal (explained in subparts)
+
 Running question Q3-a - 
     $ ./q3-a.sh
     $ file_name
