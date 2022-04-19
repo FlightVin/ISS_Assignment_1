@@ -13,6 +13,9 @@ echo #for new line
 
 #b -
 
+read
+str=$REPLY
+
 for (( i=${#str}-1; i>=0; i-- ))
 do
     echo -n "${str:$i:1}" | tr "a-z" "b-za" | tr "A-Z" "B-ZA"
@@ -22,6 +25,9 @@ done
 echo #for new line
 
 #c -
+
+read
+str=$REPLY
 
 for (( i=(${#str}-1)/2; i>=0; i-- ))
 do

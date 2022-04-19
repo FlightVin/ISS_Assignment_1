@@ -86,11 +86,16 @@ Running question Q4 -
 Running question Q5 - 
     $ ./q5.sh
     $ word_entered
+    $ Prints word_entered in reverse
 
-    1. Prints word_entered in reverse
-    2. Prints word_entered in reverse with each character changed into the subsequent character
+    $ word_entered
+    $ Prints word_entered in reverse with each character changed into the subsequent character
     Note - z/Z is changed into a/A
-    3. Prints first half word_entered in reverse and rest as same
+
+    $ word_entered
+    $ Prints first half word_entered in reverse and rest as same
+
+    NOTE - word has to be entered thrice
     
     
    
